@@ -5,9 +5,9 @@ public class Task3 {
         String password = "Caput Dragonis";
         String greeting = "Welcome";
         String wrong = "Forbidden";
-        if(password.equals("Caput Dragonis")) {
+        if (password.equals("Caput Dragonis")) {
             System.out.println(greeting);
-        } else if (!password.equals("Caput Dragonis"));{
+        } else {
             System.out.println(wrong);
         }
     }

@@ -3,7 +3,7 @@ package by.it_academy.lesson3;
 public class GradeTask {
     public static void main(String[] args) {
         String grade = "A";
-        switch (grade){
+        switch (grade) {
             case "A":
                 System.out.println("Distinction");
                 break;
@@ -20,5 +20,5 @@ public class GradeTask {
             default:
                 System.out.println("error");
         }
-}
+    }
 }
