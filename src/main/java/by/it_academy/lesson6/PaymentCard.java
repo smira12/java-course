@@ -16,8 +16,6 @@ public class PaymentCard {
         System.out.println(AlfaBank.toString());
         AlfaBank.eatHeartily();
         System.out.println(AlfaBank.toString());
-
-
     }
 
     public String toString() {
@@ -25,7 +23,7 @@ public class PaymentCard {
     }
 
     void eatAffordably() {
-        if (balance - 2.6 > 0) ;
+        if (balance - 2.6 >= 0)
         balance -= 2.6;
     }
 
