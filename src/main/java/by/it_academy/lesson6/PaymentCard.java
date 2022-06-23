@@ -23,13 +23,15 @@ public class PaymentCard {
     }
 
     void eatAffordably() {
-        if (balance - 2.6 >= 0)
-        balance -= 2.6;
+        if (balance - 2.6 >= 0) {
+            balance -= 2.6;
+        }
     }
 
     void eatHeartily() {
-        if (balance - 4.6 >= 0)
+        if (balance - 4.6 >= 0) {
             balance -= 4.6;
+        }
     }
 
     void addMoney(double amount) {
