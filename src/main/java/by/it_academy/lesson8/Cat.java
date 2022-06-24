@@ -9,19 +9,19 @@ public class Cat extends Animal implements NoiseCapable {
         super("Cat");
     }
 
-    static void purr() {
-        System.out.println(name() + " purrs");
+    void purr() {
+        System.out.println(getName() + " purrs");
     }
 
-    public static void makeNoise() {
+    public void makeNoise() {
         purr();
     }
 
     public static void main(String[] args) {
         Cat cat = new Cat("Tom");
-        System.out.println(Cat.name());
-        Cat.eat();
-        Cat.sleep();
-        Cat.makeNoise();
+        System.out.println(cat.getName());
+        cat.eat();
+        cat.sleep();
+        cat.makeNoise();
     }
 }
