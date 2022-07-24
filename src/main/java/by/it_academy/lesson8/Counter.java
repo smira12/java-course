@@ -11,7 +11,7 @@ public class Counter {
         this(0);
     }
 
-    public int getValue() {
+    int getValue() {
         return value;
     }
 
@@ -22,18 +22,24 @@ public class Counter {
     void decrease() {
         value--;
     }
-    void increase(int increaseBy){
-        increase();
+
+    void increase(int increaseBy) {
+        value += increaseBy;
     }
-    void decrease(int decreaseBy){
-        decrease();
+
+    void decrease(int decreaseBy) {
+        value -= decreaseBy;
     }
 
     public static void main(String[] args) {
-        Counter counter = new Counter(20);
-        counter.increase(0);
+        Counter counter = new Counter();
+        counter.increase(1);
         System.out.println(counter.getValue());
-        counter.decrease(0);
+        counter.increase(55);
+        System.out.println(counter.getValue());
+        counter.decrease(18);
+        System.out.println(counter.getValue());
+        counter.decrease(7);
         System.out.println(counter.getValue());
     }
 }
