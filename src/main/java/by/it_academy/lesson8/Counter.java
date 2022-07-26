@@ -33,11 +33,11 @@ public class Counter {
 
     public static void main(String[] args) {
         Counter counter = new Counter();
-        counter.increase(1);
+        counter.increase();
         System.out.println(counter.getValue());
-        counter.increase(55);
+        counter.decrease();
         System.out.println(counter.getValue());
-        counter.decrease(18);
+        counter.increase(18);
         System.out.println(counter.getValue());
         counter.decrease(7);
         System.out.println(counter.getValue());
