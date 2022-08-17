@@ -2,10 +2,7 @@ package by.it_academy.lesson15;
 
 import java.math.BigInteger;
 import java.text.DecimalFormat;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 import java.util.stream.LongStream;
 
 public class Factorial {
@@ -16,6 +13,7 @@ public class Factorial {
                 .mapToObj(BigInteger::valueOf)
                 .reduce(BigInteger.ONE, BigInteger::multiply));
         service.shutdown();
+        service.awaitTermination(1, TimeUnit.MINUTES);
 
         System.out.println(new DecimalFormat("0.###E0").format(future.get()));
     }
