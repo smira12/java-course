@@ -15,6 +15,7 @@ public class Factorial {
                 .parallel()
                 .mapToObj(BigInteger::valueOf)
                 .reduce(BigInteger.ONE, BigInteger::multiply));
+        service.shutdown();
 
         System.out.println(new DecimalFormat("0.###E0").format(future.get()));
     }

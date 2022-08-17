@@ -36,7 +36,7 @@ public class Robot implements Runnable {
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         executorService.submit(new Robot("Joe", 3, "DYRTWFDYTEG"));
-        executorService.submit(new Robot("Bill", 1, ";LKJOIKONI"));
+        executorService.submit(new Robot("Bill", 1, "LKJOIKONI"));
         executorService.submit(new Robot("Jim", 2, "HYTVNBFDU"));
 
         executorService.shutdown();
